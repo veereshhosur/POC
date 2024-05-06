@@ -3,11 +3,12 @@ package com.lbg.integrator.api.dto.request;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class KYC {
-    private String address1;
-    private String address2;
-    private String city;
-    private String state;
-    private String pin;
+public class KYC implements Serializable {
+    private String country;
+//    private String aadharDetails;
+
+    private AddressDetails addressDetails;
 }

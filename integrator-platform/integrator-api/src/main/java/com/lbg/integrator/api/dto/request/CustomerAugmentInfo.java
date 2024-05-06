@@ -2,10 +2,11 @@ package com.lbg.integrator.api.dto.request;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Data
-public class CustomerAugmentInfo {
+public class CustomerAugmentInfo implements Serializable {
 
     private Integer accountNumber;
     private String accountType;

@@ -1,6 +1,7 @@
 package com.lbg.integrator.api.service.impl;
 
-import com.lbg.ingestion.api.service.EmailService;
+
+import com.lbg.integrator.api.service.EmailService;
 import jakarta.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
-public class EmailServiceImpl implements EmailService {
+public class EmailServiceImpl {
     @Value("${spring.mail.username}")
     private String fromEmail;
 

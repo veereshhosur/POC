@@ -5,9 +5,9 @@ import lombok.Data;
 
 @Data
 public class SourceInfo {
-    private SourceInfo sourceInfo;
+    private SourceBankInfo sourceBankInfo;
     private CustomerInfo customerInfo;
-    private KYC KYC;
+    private KYC customerKyc;
     private CustomerAugmentInfo customerAugmentInfo;
 
 }

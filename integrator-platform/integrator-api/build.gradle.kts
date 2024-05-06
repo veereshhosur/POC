@@ -1,6 +1,6 @@
 plugins {
 	java
-	id("org.springframework.boot") version "3.2.4"
+	id("org.springframework.boot") version "3.2.3"
 	id("io.spring.dependency-management") version "1.1.4"
 }
 
@@ -20,9 +20,17 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
 
-	implementation("org.springframework.boot:spring-boot-starter-mail:3.2.4")
+	implementation("org.springframework.boot:spring-boot-starter-mail")
+
+	implementation("org.xerial:sqlite-jdbc:3.43.2.0")
 
 
+	implementation("org.hibernate.orm:hibernate-community-dialects:6.4.4.Final")
+
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
+// https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager
+	implementation("org.hibernate:hibernate-entitymanager:5.6.15.Final")
 
 	compileOnly ("org.projectlombok:lombok:1.18.32")
 	annotationProcessor ("org.projectlombok:lombok:1.18.32")
